@@ -1,6 +1,6 @@
 import classes from "@/app/css/homecontact.module.css";
 import { Button, Group } from "@mantine/core";
-
+import Link from 'next/link';
 function HomeContact(){
 
     return(
@@ -10,6 +10,8 @@ function HomeContact(){
                 <p className={classes.desc}> Maximisez votre croissance en discutant avec nos experts. Réservez dès maintenant un entretien en ligne pour bénéficier de conseils personnalisés et booster votre projet. </p>
                 <Group justify='center'>
                     <Button 
+                        component={Link}
+                        href={"/contact"}
                         mt={20}
                         // className= {} 
                         radius={'xl'}

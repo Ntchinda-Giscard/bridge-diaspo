@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: fit-content; /* Adjust based on your image size */
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   
   .backgroundImage {

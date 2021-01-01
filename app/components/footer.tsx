@@ -11,16 +11,16 @@ import {IconBrandFacebook,IconBrandInstagram, IconBrandLinkedin } from '@tabler/
 
 function FooterSite() {
     return ( 
-        <div className={"w-screen"} style={{ paddingTop: "5%", paddingInline: "7%" }} >
-            <div className="grid grid-cols-2 flex justify-between items-center w-full"  >
+        <div className={"min-w-full"} style={{ paddingTop: "5%", paddingInline: "7%" }} >
+            <div className="md:flex-row flex-col  flex justify-center md:justify-between items-center w-full"  >
                 <div className="flex flex-col" style={{width: 208}}>
                     <Image src={logo} alt="logo" width={220} height={108} />
                     <p className={classes.desc}> 
                     Votre allié pour retourner investir au pays en toute sécurité.</p>
                 </div>
 
-                <div className="grid grid-cols-3">
-                    <div className="flex flex-col">
+                <div className="grid gap-3 w-full justify-center grid-cols-1 md:grid-cols-3 ">
+                    <div className="flex flex-col w-full justify-center ">
                         <h3 className={classes.title}>Menu</h3>
                         {
                             links.map((l) => (
@@ -28,7 +28,7 @@ function FooterSite() {
                             ))
                         }
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col justify-center">
                         <h3 className={classes.title}>Nos services</h3>
                         {
                             services.map((s) => (
@@ -36,7 +36,7 @@ function FooterSite() {
                             ))
                         }
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col justify-center">
                         <h3 className={classes.title}>Resource</h3>
 
                         {
@@ -48,7 +48,7 @@ function FooterSite() {
                 </div>
             </div>
             <Divider my={20} />
-            <div className= " flex flex-row justify-between items-center mb-5 " >
+            <div className= " flex md:flex-row md:justify-between flex-col justify-center items-center mb-5 " >
                 <p className={classes.copywrite} >© 2024 Bizdzv.Store - Made with ❤️ by NG </p>
                 <Group gap={2}>
                     <IconBrandFacebook style={{ cursor: "pointer" }} stroke={1} />

@@ -3,10 +3,12 @@ import Image from 'next/image';
 import toplogo from '@/public/assets/topLogo.svg';
 import {links} from '@/app/links';
 import Link from 'next/link'
-import { Button } from '@mantine/core';
+import { Button, Burger, Drawer } from '@mantine/core';
 import cx from 'clsx';
-import classes from '../css/topbar.module.css';
+// import classes from '../css/topbar.module.css';
 import { usePathname } from 'next/navigation';
+import { useState } from 'react';
+import classes from './TopBar.module.css'; // Import your CSS module
 
 
 function TopBar() {
@@ -18,37 +20,58 @@ function TopBar() {
     }
     return pathname.startsWith(path);
   };
+  const [opened, setOpened] = useState(false);
+
     return ( 
         <>
-            <div className= {cx(['flex flex-row w-screen justify-between items-center', classes.topbar])} >
-                <div>
-                    <Image 
-                        src={toplogo} 
-                        alt='top logo' 
-                        width={100} 
-                        height={30}
-                    />
-                </div>
-                <div className={cx(['flex flex-row justify-around gap-8'])}>
-                    {
-                        links.map((l) => (
-                            <Link key={l?.label} className={cx([classes.link, 
-                                isActive(l?.link) ? classes.activeLink : null
-                            ]
-                            )} href={l?.link}> {l?.label} </Link>
-                        ))
-                    }
-                </div>
-                <div>
-                    <Button 
-                        radius={'xl'} 
-                        variant="gradient"
-                        gradient={{ from: '#0B8F23', to: '#03290A', deg: 90 }}
-                    >
-                             Mon Compte 
-                    </Button>
-                </div>
-            </div>
+                  <div className={cx(classes.topbarContainer)}>
+        <div className="flex flex-row gap-4">
+            {/* Burger button for mobile */}
+        <div className={classes.burgerContainer}>
+          <Burger opened={opened} onClick={() => setOpened((o) => !o)} />
+        </div>
+          <Image 
+            src={toplogo} 
+            alt="top logo" 
+            width={100} 
+            height={30} 
+          />
+        </div>
+
+        
+
+        <div>
+          <Button 
+            radius="xl" 
+            variant="gradient"
+            gradient={{ from: '#0B8F23', to: '#03290A', deg: 90 }}
+          >
+            Mon Compte
+          </Button>
+        </div>
+      </div>
+
+      {/* Drawer for mobile menu */}
+      <Drawer
+        opened={opened}
+        onClose={() => setOpened(false)}
+        size="50%" // Adjust size as needed
+        padding="md"
+        title="Navigation"
+      >
+        <div className={classes.linksContainer}>
+          {links.map((l) => (
+            <Link
+              key={l?.label}
+              className={cx(classes.link, isActive(l?.link) ? classes.activeLink : null)}
+              href={l?.link}
+              onClick={() => setOpened(false)} // Close the drawer on link click
+            >
+              {l?.label}
+            </Link>
+          ))}
+        </div>
+      </Drawer>
         </> 
     );
 }

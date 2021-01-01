@@ -26,9 +26,9 @@ function Solutions() {
                 title="Tout savoir sur nous"
                 links="Home  / A propos"
             />
-            <div className = " flex felx-row justify-center gap-4" style={{paddingInline: 50, paddingBlock: 25}}>
+            <div className = " flex flex-col lg:flex-row justify-center gap-4" style={{paddingInline: 50, paddingBlock: 25}}>
                 <Image src={solImg} alt="about" height={300} width={438} />
-                <div id="text area" className="flex flex-col gap-4" style={{width: 538}}>
+                <div id="text area" className="flex flex-col gap-4" style={{maxWidth: 538}}>
                     <p className={cx([classes.wwa, poppins_bold.className])}> qui somme nous </p>
                     <p className={cx([classes.title, poppins_bold.className])}> une seule plateforme, une multitude de services et des solutions. </p>
                     <p className={cx([classes.desc, poppins_light.className])}> 
@@ -48,7 +48,7 @@ function Solutions() {
                 
             </div>
             <HomeContact />
-            <NewsLettwer />
+            {/* <NewsLettwer /> */}
             
         </> 
     );
