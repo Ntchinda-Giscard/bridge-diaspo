@@ -15,7 +15,7 @@ export default function AuthProvider({
     useEffect(()=>{
         const token = localStorage.getItem('token-bridge');
         
-        if(pathname == '/mes-travaux'){
+        if(pathname == '/site/mes-travaux'){
             console.log(token)
             if(token == null){
                 console.log("no token")

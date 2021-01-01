@@ -1,8 +1,8 @@
 import TopBanner from "../components/topBanner";
-import {solutions} from '@/app/solution/components/solutions'
+import {solutions} from '@/app/site/solution/components/solutions'
 import Image from 'next/image'
 import solImg from '@/public/assets/sol.svg'
-import classes from '@/app/solution/solution.module.css';
+import classes from '@/app/site/solution/solution.module.css';
 import {Poppins} from 'next/font/google';
 import cx from 'clsx';
 import { Divider, Group } from "@mantine/core";

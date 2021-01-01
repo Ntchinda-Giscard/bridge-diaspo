@@ -1,8 +1,8 @@
 "use client"
 import TopBanner from "../components/topBanner";
-import {services} from "@/app/components/sub-components.tsx/service-data";
+import {services} from "@/app/site/components/sub-components.tsx/service-data";
 import Image from 'next/image';
-import classes from '@/app/service/css/service.module.css';
+import classes from '@/app/site/service/css/service.module.css';
 import { Button, List, Space, ThemeIcon, rem } from "@mantine/core";
 import { IconSquareCheckFilled} from '@tabler/icons-react';
 import Link from 'next/link';

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Asside from "./components/green-asside";
 import Image from 'next/image';
 import logo from "@/public/assets/logo.svg";
+import Provider from "../site/providers/provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,16 +20,17 @@ export default function AuthLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className={'grid grid-cols-3 h-screen'}>
-            <div className={'col-span-1 bg-red-200'}>
-                <Asside />
-            </div>
-            <div className={'col-span-2 bg-white-100 flex flex-col justify-center items-center'}>
-                <Image src={logo} alt="logo" />
-                {children}
-            </div>
-        </div>
-        
+      <Provider>
+          <div className={'grid grid-cols-3 h-screen'}>
+              <div className={'col-span-1 bg-red-200'}>
+                  <Asside/>
+              </div>
+              <div className={'col-span-2 bg-white-100 flex flex-col justify-center items-center'}>
+                  <Image src={logo} alt="logo"/>
+                  {children}
+              </div>
+          </div>
+      </Provider>
       </body>
     </html>
   );

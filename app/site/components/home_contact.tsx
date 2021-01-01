@@ -1,4 +1,4 @@
-import classes from "@/app/css/homecontact.module.css";
+import classes from "@/app/site/css/homecontact.module.css";
 import { Button, Group } from "@mantine/core";
 import Link from 'next/link';
 function HomeContact(){

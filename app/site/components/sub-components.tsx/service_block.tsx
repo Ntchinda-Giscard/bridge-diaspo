@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import classes from "@/app/css/seivce.module.css";
+import classes from "@/app/site/css/seivce.module.css";
 import agri from '@/public/assets/agri.jpg'
 import Link from 'next/link'
 

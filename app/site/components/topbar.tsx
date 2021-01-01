@@ -1,11 +1,10 @@
 "use client"
 import Image from 'next/image';
 import toplogo from '@/public/assets/topLogo.svg';
-import {links} from '@/app/links';
+import {links} from '@/app/site/links';
 import Link from 'next/link'
 import { Button, Burger, Drawer } from '@mantine/core';
 import cx from 'clsx';
-// import classes from '../css/topbar.module.css';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import classes from './TopBar.module.css'; // Import your CSS module
@@ -58,6 +57,8 @@ function TopBar() {
             radius="xl" 
             variant="gradient"
             gradient={{ from: '#0B8F23', to: '#03290A', deg: 90 }}
+            component={Link}
+            href={'/auth/login'}
           >
             Mon Compte
           </Button>

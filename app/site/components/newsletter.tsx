@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import newsletter from "@/public/assets/newsletter.svg";
-import classes from "@/app/css/newsletter.module.css";
+import classes from "@/app/site/css/newsletter.module.css";
 import cx from 'clsx'
 import { Button, Group, Stack, TextInput } from '@mantine/core';
 import { IconBrandFacebookFilled, IconBrandInstagram, IconBrandXFilled } from '@tabler/icons-react';

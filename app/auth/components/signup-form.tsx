@@ -2,24 +2,26 @@
 import { Button, Text, Group, PasswordInput, TextInput } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import classes from '../login/css/login.module.css';
-import Link from "next/link"
+import Link from 'next/link'
 
-function LoginForm(){
+function SignUpForm(){
     const form = useForm({
         mode: 'uncontrolled',
         initialValues: {
-          email: '',
-          password: '',
+            email: '',
+            password: '',
+            confirmPassword: '',
         },
-    
+
         validate: {
-          email: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid email'),
-          password: (value) => ((value.length <= 6) ? "Short password" : null),
+            email: (value) => (/^\S+@\S+$/.test(value) ? null : 'Email invalide'),
+            password: (value) => ((value.length <= 6) ? "Short password" : null),
+            confirmPassword: (value) => ((value !== "") ? "Short password" : null),
         },
-      });
+    });
     return(
         <>
-            <form 
+            <form
                 onSubmit={form.onSubmit((values) => console.log(values))}
                 className={classes.form}
             >
@@ -54,16 +56,32 @@ function LoginForm(){
                     }}
                 />
 
+                <PasswordInput
+                    mt={20}
+                    mb={15}
+                    withAsterisk
+                    variant="filled"
+                    label="Confirmer le mot de Passe"
+                    placeholder="********"
+                    key={form.key('confirmPassword')}
+                    {...form.getInputProps('confirmPassword')}
+                    styles={{
+                        required:{
+                            color: "#0B8F23"
+                        }
+                    }}
+                />
+
                 <Group grow mt="md">
-                    <Button bg="#0B8F23" type="submit">Se Connecter</Button>
+                    <Button bg="#0B8F23" type="submit">{"S'inscrire"}</Button>
                 </Group>
                 <Group justify='center' gap={2}>
-                        <p style={{ color: "#00000099" }}> {"Vous n'avez pas de compte ?"} </p>
-                        <Text component={Link} href={'/auth/signup'} style={{ color: "#0B8F23", cursor: 'pointer' }}> {"S'inscrire"} </Text>
+                    <p style={{ color: "#00000099" }}> {"Vous avez deja un compte ?"} </p>
+                    <Text component={Link} href={'/auth/login'} style={{ color: "#0B8F23", cursor: 'pointer' }}> {"Se connecter"} </Text>
                 </Group>
             </form>
         </>
     )
 }
 
-export default LoginForm;
+export default SignUpForm;

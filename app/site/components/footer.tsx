@@ -1,9 +1,9 @@
 import logo from "@/public/assets/logo.svg";
 import Image from 'next/image';
-import classes from "@/app/css/footer.module.css";
-import {links}  from "@/app/links";
-import {services} from "@/app/services";
-import {ressource} from "@/app/ressource";
+import classes from "@/app/site/css/footer.module.css";
+import {links}  from "@/app/site/links";
+import {services} from "@/app/site/services";
+import {ressource} from "@/app/site/ressource";
 import Link from "next/link";
 import { Divider, Group } from "@mantine/core";
 import {IconBrandFacebook,IconBrandInstagram, IconBrandLinkedin } from '@tabler/icons-react';

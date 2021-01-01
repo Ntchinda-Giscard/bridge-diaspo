@@ -1,0 +1,33 @@
+.assideBG{
+    background: linear-gradient(#0A8320, #032E0B);
+}
+
+.title{
+    padding-inline: 15px;
+    padding-top: 50px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.subTitle{
+    font-weight: 900;
+    text-align: center;
+    color:  white;
+    font-size: 20px;
+
+}
+
+.desc{
+    font-weight: 200;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

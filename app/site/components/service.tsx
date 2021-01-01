@@ -1,4 +1,4 @@
-import classes from "@/app/css/seivce.module.css";
+import classes from "@/app/site/css/seivce.module.css";
 import { Divider, Group } from "@mantine/core";
 import ServiceBlock from "./sub-components.tsx/service_block";
 import { services } from "./sub-components.tsx/service-data";
