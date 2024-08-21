@@ -1,0 +1,10 @@
+.assideBG{
+    background: linear-gradient(#0A8320, #032E0B);
+}
+
+.title{
+    padding-inline: 15px;
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+}
