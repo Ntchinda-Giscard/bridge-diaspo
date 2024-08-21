@@ -1,0 +1,28 @@
+.topbar{
+    padding-inline: 3%;
+    padding-block: 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999999;
+
+}
+
+.accountButton{
+    background: linear-gradient(0.25turn, #0B8F23, #03290A );
+}
+
+.link{
+    /* color: #111111; */
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.activeLink{
+    background: linear-gradient(to right, #0B8F23, #03290A );
+    --webkit-background-clip: text;
+    --webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+}
