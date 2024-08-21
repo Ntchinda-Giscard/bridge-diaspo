@@ -20,7 +20,7 @@ function TopBar() {
   };
     return ( 
         <>
-            <div className= {cx(['flex flex-row w-screen justify-between', classes.topbar])} >
+            <div className= {cx(['flex flex-row w-screen justify-between items-center', classes.topbar])} >
                 <div>
                     <Image 
                         src={toplogo} 

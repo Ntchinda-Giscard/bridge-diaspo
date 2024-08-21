@@ -4,8 +4,9 @@ import HeroSection from "./components/hero";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <HeroSection />
-      
+      <div style={{ paddingTop: '5%' }}>
+        <HeroSection />
+      </div>
     </main>
   );
 }
