@@ -1,0 +1,19 @@
+.stats_value{
+    font-size: 15px;
+    font-weight: 700;
+    color: #0B8F23;
+}
+
+.stat_label{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.stats{
+    position: relative;
+    transform: translateY(-50%);
+    background: white;
+    z-index: 99999;
+    padding: 20px;
+    box-shadow: 10px 10px 10px #2825230A;
+}
