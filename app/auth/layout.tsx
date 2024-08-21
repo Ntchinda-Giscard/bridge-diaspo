@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Asside from "./components/green-asside";
 import Image from 'next/image';
+import logo from "@/public/assets/logo.svg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,8 +23,8 @@ export default function AuthLayout({
             <div className={'col-span-1 bg-red-200'}>
                 <Asside />
             </div>
-            <div className={'col-span-2 bg-gray-400'}>
-                <Image src={} alt="logo" />
+            <div className={'col-span-2 bg-white-100 flex flex-col justify-center items-center'}>
+                <Image src={logo} alt="logo" />
                 {children}
             </div>
         </div>
