@@ -1,5 +1,6 @@
 import classes from "@/app/css/seivce.module.css";
 import { Divider, Group } from "@mantine/core";
+import ServiceBlock from "./sub-components.tsx/service_block";
 
 
 function Services(){
@@ -10,6 +11,7 @@ function Services(){
             <p className={classes.heading}> Nos differentes services </p>
             <Group justify="center" > 
                 <Divider w={"10%"} my={20} />
+                <ServiceBlock />
             </Group>
             
          </div>
