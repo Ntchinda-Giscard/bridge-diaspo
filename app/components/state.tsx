@@ -6,13 +6,18 @@ function StatSection() {
     return ( <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
     <div className = {cx(['flex flex-row p-5', classes.stats])}>
         {
-            stats.map((s) => (
+            stats.map((s, index) => (
                 <Group>
                     <Stack>
                         <p className={classes.stats_value}> {s?.value} </p>
                         <p className={classes.stat_label}> {s?.label} </p>
                     </Stack>
-                    <Divider mx={15} orientation="vertical" />
+                    <Divider 
+                        style={{ display: index === 4 ? 'none' : 'block'  }} 
+                        // style ={{ display: 'none' }}
+                        mx={15} 
+                        orientation="vertical" 
+                    />
                 </Group>
                 
             ))
