@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeroSection from "./components/hero";
 import StatSection from "./components/state";
+import AboutHomeSection from "./components/about_home";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <div style={{ paddingTop: '5%' }}>
         <HeroSection />
         <StatSection />
+        <AboutHomeSection />
       </div>
     </main>
   );
