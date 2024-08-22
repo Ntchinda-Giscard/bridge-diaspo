@@ -3,6 +3,7 @@ import HeroSection from "./components/hero";
 import StatSection from "./components/state";
 import AboutHomeSection from "./components/about_home";
 import Services from "./components/service";
+import HomeContact from "./components/home_contact";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <StatSection />
         <AboutHomeSection />
         <Services />
+        <HomeContact />
       </div>
     </main>
   );
