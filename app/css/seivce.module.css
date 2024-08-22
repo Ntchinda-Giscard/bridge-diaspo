@@ -13,12 +13,14 @@
 .serviceBlock {
     width: 300px; /* Adjust size as needed */
     position: relative;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 .imageBontainer {
     position: relative;
     width: 100%;
-    height: 200px; /* Adjust height as needed */
+    height: fit-content; /* Adjust height as needed */
     overflow: hidden;
 }
 
@@ -27,16 +29,26 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50%; /* Cover from bottom to middle */
-    background: linear-gradient(to top, rgba(0, 128, 0, 0.8), rgba(0, 128, 0, 0.0)); /* Green gradient fading to transparent */
+    height: 40%; /* Cover from bottom to middle */
+    background: linear-gradient(to top, #03290AFF, #0B8F231A); /* Green gradient fading to transparent */
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: start;
+    flex-direction: column;
+    padding: 5%;
 }
 
 .overlayText {
     color: white;
-    font-size: 1rem; /* Adjust text size as needed */
+    font-size: 1em; /* Adjust text size as needed */
     margin-bottom: 10px; /* Adjust space from bottom as needed */
-    text-align: center;
+    text-align: start;
+    font-weight: 999;
+}
+
+.desc{
+    color: white;
+    font-size: 0.7em;
+    text-align: start;
+    font-weight: 200;
 }
