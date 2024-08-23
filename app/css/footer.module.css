@@ -1,0 +1,22 @@
+.desc{
+    font-weight: 400;
+    font-size: small;
+}
+
+.title{
+    color: #232323;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.links{
+    font-size: small;
+    color: #232323;
+    text-decoration: underline;
+}
+
+.copywrite{
+    color: #313131;
+    font-size: small;
+    font-weight: 200;
+}
