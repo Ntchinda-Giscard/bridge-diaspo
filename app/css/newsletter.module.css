@@ -1,0 +1,53 @@
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: fit-content; /* Adjust based on your image size */
+    overflow: hidden;
+  }
+  
+  .backgroundImage {
+    z-index: 1;
+    width: 100%;
+  }
+  
+  .overlayInput,
+  .overlayImage {
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .overlayInput {
+    /* width: 300px; */
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .overlayImage {
+    width: 100px;
+    height: 100px;
+  }
+
+.title{
+    top: 10%;
+    left: 10%;
+    font-weight: 700;
+    color: white;
+    font-size: large;
+    margin-bottom: 15px;
+
+}
+
+.desc{
+  top: 30%;
+  left: 10%;
+  font-weight: 300;
+  font-size: small;
+  color: white;
+}
+.iconWrapper{
+  background: linear-gradient(#0B8F23, #03290A);;
+  border-radius: 50%;
+  padding: 10px;
+}

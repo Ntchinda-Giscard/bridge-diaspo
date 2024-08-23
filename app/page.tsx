@@ -4,6 +4,8 @@ import StatSection from "./components/state";
 import AboutHomeSection from "./components/about_home";
 import Services from "./components/service";
 import HomeContact from "./components/home_contact";
+import Testimonials from "./components/testimonials";
+import NewsLettwer from "./components/newsletter";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
         <AboutHomeSection />
         <Services />
         <HomeContact />
+        <Testimonials />
+        <NewsLettwer />
       </div>
     </main>
   );
