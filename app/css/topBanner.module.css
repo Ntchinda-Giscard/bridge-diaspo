@@ -1,0 +1,19 @@
+.topBanner{
+    background: linear-gradient(0.25turn, #0B8F23, #03290A);
+    padding-top: 15%;
+    padding-inline: 7%;
+    padding-bottom: 5%;
+    
+}
+
+.title{
+    font-weight: 800;
+    font-size: xx-large;
+    color: white;
+}
+
+.links{
+    font-weight: 500;
+    font-size: medium;
+    color: white;
+}

@@ -1,6 +1,20 @@
-.topBanner{
-    background: linear-gradient(0.25turn, #0B8F23, #03290A);
-    padding-top: 20%;
-    padding-inline: 15%;
-    
+.name{
+    font-weight: 400;
+    font-size: smaller;
+    color: #A0A0A0;
+}
+
+.heading{
+    font-weight: 700;
+    font-size: large;
+    margin-bottom: 10px;
+    color: #232323;
+    margin-bottom: 15px;
+
+}
+
+.desc{
+    font-weight: 400;
+    font-size: medium;
+    margin-bottom: 15px;
 }
