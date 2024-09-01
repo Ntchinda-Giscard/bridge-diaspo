@@ -43,7 +43,10 @@ function Services(){
                                         
                                     }
                                 </List>
-                                <Button size="compact-md" styles={{ label:{ fontSize: 12, fontWeight: 400 } }} className="flex items-end" radius="xl" bg="#0B8F23" >En savoir plus</Button>
+                                <div className={" h-full flex items-end "}>
+                                    <Button size="compact-md" styles={{ label:{ fontSize: 12, fontWeight: 400 } }} className="flex items-end" radius="xl" bg="#0B8F23" >En savoir plus</Button>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
