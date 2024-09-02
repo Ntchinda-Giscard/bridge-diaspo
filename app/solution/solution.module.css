@@ -1,0 +1,19 @@
+.wwa{
+    font-weight: 900;
+    color: #757575;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.heading{
+    font-weight: 900;
+    color: #1B1717;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.desc{
+    font-weight: 400;
+    color: #6E6E6E;
+    font-size: 15px;
+}
