@@ -12,7 +12,6 @@ function Services(){
             <p className={classes.heading}> Nos differentes services </p>
             <Group justify="center" > 
                 <Divider w={"10%"} my={20} />
-                
             </Group>
             <Group justify='center'>
                 <div className='grid grid-cols-3 gap-4'>
