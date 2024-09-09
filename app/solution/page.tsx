@@ -8,6 +8,7 @@ import cx from 'clsx';
 import { Divider, Group } from "@mantine/core";
 import SolutionCard from "./components/solutionCard";
 import NewsLettwer from "../components/newsletter";
+import HomeContact from "../components/home_contact";
 
 const poppins_bold = Poppins({
     weight: ['900'],
@@ -38,7 +39,7 @@ Que ce soit pour  des démarches administratives, des transfert de fonds , la ge
             <Group justify="center" > 
                 <Divider w={"10%"} my={20} />
             </Group>
-            <div className="flex justify-center flex-wrap w-full">
+            <div className="flex justify-center flex-wrap gap-4 w-full">
                 {
                     solutions.map((s) =>(
                         <SolutionCard title={s.title} desc={s.desc} />
@@ -46,6 +47,7 @@ Que ce soit pour  des démarches administratives, des transfert de fonds , la ge
                 }
                 
             </div>
+            <HomeContact />
             <NewsLettwer />
             
         </> 
