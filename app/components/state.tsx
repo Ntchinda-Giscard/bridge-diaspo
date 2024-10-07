@@ -7,7 +7,7 @@ function StatSection() {
     <div className = {cx(['flex flex-row p-5', classes.stats])}>
         {
             stats.map((s, index) => (
-                <Group>
+                <Group key={s?.label}>
                     <Stack>
                         <p className={classes.stats_value}> {s?.value} </p>
                         <p className={classes.stat_label}> {s?.label} </p>

@@ -19,6 +19,7 @@ function Services(){
                     {
                         services.map((s) => (
                             <ServiceBlock 
+                                key={s?.service}
                                 service = {s?.service}
                                 desc={s?.desc}
                                 image={s?.image}

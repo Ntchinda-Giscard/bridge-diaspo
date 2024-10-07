@@ -32,7 +32,7 @@ function TopBar() {
                 <div className={cx(['flex flex-row justify-around gap-8'])}>
                     {
                         links.map((l) => (
-                            <Link className={cx([classes.link, 
+                            <Link key={l?.label} className={cx([classes.link, 
                                 isActive(l?.link) ? classes.activeLink : null
                             ]
                             )} href={l?.link}> {l?.label} </Link>
