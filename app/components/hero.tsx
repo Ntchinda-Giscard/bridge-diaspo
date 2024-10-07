@@ -14,8 +14,7 @@ function HeroSection() {
                 Bienvenue chez Bridge. SA
             </h1>
             <p className={classes.hero_desc}>
-                Le lien solide avec votre pays d'origine, votre allier de confiance ici et la bas.
-                rentrer chez vous par ici!
+               {" Le lien solide avec votre pays d'origine, votre allier de confiance ici et la bas.rentrer chez vous par ici!"}
             </p>
 
             <Group justify="start" gap={10} mt={15} >

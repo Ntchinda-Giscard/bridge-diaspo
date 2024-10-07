@@ -57,8 +57,8 @@ function LoginForm(){
                     <Button bg="#0B8F23" type="submit">Se Connecter</Button>
                 </Group>
                 <Group justify='center' gap={2}>
-                        <p style={{ color: "#00000099" }}> Vous n'avez pas de compte ? </p>
-                        <p style={{ color: "#0B8F23", cursor: 'pointer' }}> S'inscrire </p>
+                        <p style={{ color: "#00000099" }}> {"Vous n'avez pas de compte ?"} </p>
+                        <p style={{ color: "#0B8F23", cursor: 'pointer' }}> {"S'inscrire"} </p>
                 </Group>
             </form>
         </>

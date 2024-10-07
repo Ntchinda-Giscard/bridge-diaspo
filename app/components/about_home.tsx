@@ -16,7 +16,7 @@ function AboutHomeSection(){
                         VOS SOLUTIONS DIGITAL SUR MESURE
                     </p>
                     <p className={classes.desc_text}>
-                        Le Lorem Ipsum est simplement du faux texte utilisé dans la composition et la mise en page avant impression. Il est le faux texte standard de l'industrie depuis les années 1500, lorsqu'un imprimeur anonyme a pris une galée de caractères et les a mélangés pour créer un livre de spécimens de caractères. Il a survécu non seulement à cinq 
+                        {"Le Lorem Ipsum est simplement du faux texte utilisé dans la composition et la mise en page avant impression. Il est le faux texte standard de l'industrie depuis les années 1500, lorsqu'un imprimeur anonyme a pris une galée de caractères et les a mélangés pour créer un livre de spécimens de caractères. Il a survécu non seulement à cinq "}
                     </p>
                     <Group>
                         <Button styles={{ label:{color: "#fff", paddingInline: 20} }} px={15} radius ="xl" bg="#0B8F23" > Explorer </Button>

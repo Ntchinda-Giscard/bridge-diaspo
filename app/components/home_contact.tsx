@@ -6,7 +6,7 @@ function HomeContact(){
     return(
         <>
             <div className={classes.homec}>
-                <p className={classes.title}> Prenez Rendez-vous dès Aujourd'hui ! </p>
+                <p className={classes.title}> {"Prenez Rendez-vous dès Aujourd'hui !"} </p>
                 <p className={classes.desc}> Maximisez votre croissance en discutant avec nos experts. Réservez dès maintenant un entretien en ligne pour bénéficier de conseils personnalisés et booster votre projet. </p>
                 <Group justify='center'>
                     <Button 

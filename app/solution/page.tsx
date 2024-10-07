@@ -31,8 +31,8 @@ function Solutions() {
                 <div id="text area" className="flex flex-col gap-4" style={{width: 538}}>
                     <p className={cx([classes.wwa, poppins_bold.className])}> qui somme nous </p>
                     <p className={cx([classes.title, poppins_bold.className])}> une seule plateforme, une multitude de services et des solutions. </p>
-                    <p className={cx([classes.desc, poppins_light.className])}> Bridge SA  est une entreprise spécialisée dans la fourniture de services complets et sur mesure pour répondre aux besoins des camerounais vivant a l'étranger. en tant que passerelle fiable entre le Cameroun et ses diasporas, bridge SA s’engage a faciliter la gestion des affaire personnel, familiales  et professionnelles a distance .
-Que ce soit pour  des démarches administratives, des transfert de fonds , la gestion immobilière , la création des entreprises  et ou même l’organisation d’événements spéciaux , </p>
+                    <p className={cx([classes.desc, poppins_light.className])}> 
+                    {"Bridge SA  est une entreprise spécialisée dans la fourniture de services complets et sur mesure pour répondre aux besoins des camerounais vivant a l'étranger. en tant que passerelle fiable entre le Cameroun et ses diasporas, bridge SA s’engage a faciliter la gestion des affaire personnel, familiales  et professionnelles a distance .Que ce soit pour  des démarches administratives, des transfert de fonds , la gestion immobilière , la création des entreprises  et ou même l’organisation d’événements spéciaux ,"} </p>
                 </div>
             </div>
             <p className={classes.heading}> Nos differents solutions</p>

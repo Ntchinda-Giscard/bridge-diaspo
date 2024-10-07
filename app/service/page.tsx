@@ -38,7 +38,7 @@ function Services(){
                                 >
                                     {
                                         s?.points?.map((p) => (
-                                            <List.Item c="#0B8F23"> {p} </List.Item>
+                                            <List.Item key={p} c="#0B8F23"> {p} </List.Item>
                                         ))
                                         
                                     }
