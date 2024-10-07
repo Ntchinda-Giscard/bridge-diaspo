@@ -1,4 +1,4 @@
-import { Group, Stack, TextInput } from "@mantine/core";
+import { Group, Stack, TextInput, Textarea } from "@mantine/core";
 import TopBanner from "../components/topBanner";
 import { IconPhone, IconMail, IconMapPin} from '@tabler/icons-react';
 import MyGoogleMap from "./components/maps";
@@ -63,7 +63,8 @@ function Contact() {
                 />
                 </Group>
                 <Group grow>
-                    <TextInput
+                    <Textarea
+                        size="lg"
                         placeholder="Message"
                         variant={"filled"}
                         w={"100%"}
