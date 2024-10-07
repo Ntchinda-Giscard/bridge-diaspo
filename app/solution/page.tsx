@@ -42,7 +42,7 @@ Que ce soit pour  des démarches administratives, des transfert de fonds , la ge
             <div className="flex justify-center flex-wrap gap-4 w-full">
                 {
                     solutions.map((s) =>(
-                        <SolutionCard title={s.title} desc={s.desc} />
+                        <SolutionCard key={s?.title} title={s.title} desc={s.desc} />
                     ))
                 }
                 

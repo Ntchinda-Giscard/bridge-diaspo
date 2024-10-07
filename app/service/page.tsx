@@ -17,7 +17,7 @@ function Services(){
             />
             {
                 services.map((s, index) => (
-                    <div className={`flex mt-20 mb-8 gap-20 ${ index%2 === 0?'flex-row' : 'flex-row-reverse'} justify-center w-screen`} >
+                    <div key={s?.service} className={`flex mt-20 mb-8 gap-20 ${ index%2 === 0?'flex-row' : 'flex-row-reverse'} justify-center w-screen`} >
                         <div>
                             <Image src={s?.image} alt={s?.service} width={400} height={400} />
                         </div>
