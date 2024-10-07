@@ -24,7 +24,7 @@ function FooterSite() {
                         <h3 className={classes.title}>Menu</h3>
                         {
                             links.map((l) => (
-                                <Link className={classes.links} href={l?.link}> {l?.label}  </Link>
+                                <Link key={l?.label} className={classes.links} href={l?.link}> {l?.label}  </Link>
                             ))
                         }
                     </div>
@@ -32,7 +32,7 @@ function FooterSite() {
                         <h3 className={classes.title}>Nos services</h3>
                         {
                             services.map((s) => (
-                                <Link className={classes.links} href={s?.link}> {s?.label}  </Link>
+                                <Link key={s?.label} className={classes.links} href={s?.link}> {s?.label}  </Link>
                             ))
                         }
                     </div>
@@ -41,7 +41,7 @@ function FooterSite() {
 
                         {
                             ressource.map((r) => (
-                                <Link className={classes.links} href={r?.link}> {r?.label}  </Link>
+                                <Link key={r?.label} className={classes.links} href={r?.link}> {r?.label}  </Link>
                             ))
                         }
                     </div>
