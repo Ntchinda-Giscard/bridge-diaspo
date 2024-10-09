@@ -20,9 +20,9 @@ interface solutions{
 function SolutionCard({title, desc}: solutions) {
     return ( <>
      <div className={classes.solCard}>
-        <p className={cx([poppins_bold.className, classes.solCardTitle])}>solution 1</p>
+        <p className={cx([poppins_bold.className, classes.solCardTitle])}>{title}</p>
         <p className={cx([poopins_samll.className, classes.solCardDesc])}>
-            Promouvoir une croissance économique soutenue, inclusive et durable et un travail décent pour tous
+            {desc}
         </p>
         
      </div>
