@@ -1,4 +1,4 @@
-import { Group, Stack, TextInput, Textarea } from "@mantine/core";
+import { Group, Stack, TextInput, Textarea, rem } from "@mantine/core";
 import TopBanner from "../components/topBanner";
 import { IconPhone, IconMail, IconMapPin} from '@tabler/icons-react';
 import MyGoogleMap from "./components/maps";
@@ -10,12 +10,13 @@ function Contact() {
             title="Nous Contacter"
             links="Home  / Contact"
         />
-        <div className="grid grid-cols-5 gap-4" style={{background: "#F8F5F5", padding: 50}}>
-            <div className="col-span-3" style={{background: "#FFF", padding: 24}}>
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4" style={{background: "#F8F5F5", padding: "10%"}}>
+            <div className="md:col-span-3 col-span-1" style={{background: "#FFF", padding: 24}}>
                 <h1 className="text-xl font-bold"> Formulaire de contact </h1>
                 <div style={{width: 50, height: 5, background: "#0B8F23", marginBlock: 5, borderRadius: 8}}></div>
-                <Group mb={20} grow>
+                <div className="flex flex-col md:flex-row w-full gap-4">
                     <TextInput 
+                        w="100%"
                         placeholder="Nom"
                         label="Nom"
                         withAsterisk
@@ -26,20 +27,22 @@ function Contact() {
                         }}
                         variant="filled"
                     />
+                    <TextInput
+                        w="100%" 
+                        placeholder="Prenom"
+                        label="Prenom"
+                        withAsterisk
+                        styles={{
+                            required:{
+                                color: "#0B8F23"
+                            }
+                        }}
+                        variant="filled"
+                    />
+                </div>
+                <div className="flex flex-col md:flex-row w-full gap-4">
                     <TextInput 
-                    placeholder="Prenom"
-                    label="Prenom"
-                    withAsterisk
-                    styles={{
-                        required:{
-                            color: "#0B8F23"
-                        }
-                    }}
-                    variant="filled"
-                />
-                </Group>
-                <Group grow>
-                    <TextInput 
+                        w="100%"
                         placeholder="Email"
                         label="Email"
                         withAsterisk
@@ -50,24 +53,26 @@ function Contact() {
                         }}
                         variant="filled"
                     />
-                    <TextInput 
-                    placeholder="Téléphone"
-                    label="Téléphone"
-                    withAsterisk
-                    styles={{
-                        required:{
-                            color: "#0B8F23"
-                        }
-                    }}
-                    variant="filled"
-                />
-                </Group>
-                <Group grow>
+                    <TextInput
+                        w="100%" 
+                        placeholder="Téléphone"
+                        label="Téléphone"
+                        withAsterisk
+                        styles={{
+                            required:{
+                                color: "#0B8F23"
+                            }
+                        }}
+                        variant="filled"
+                    />
+                </div>
+                <div className="flex flex-col md:flex-row w-full gap-4">
                     <Textarea
                         size="lg"
+                        w="100%"
                         placeholder="Message"
                         variant={"filled"}
-                        w={"100%"}
+                        // w={"100%"}
                         label="Message"
                         withAsterisk
                         styles={{
@@ -78,26 +83,26 @@ function Contact() {
                         mt={20}
                          
                     />
-                </Group>
-                
+                </div>
             </div>
-            <div className="col-span-2" style={{background: "#FFF", height: 'fit-content', padding: 24}}>
+
+            <div className="md:col-span-2 col-span-1" style={{background: "#FFF", height: 'fit-content', padding: 24}}>
                 <h1 className="text-xl font-bold"> Nos coordonnées </h1>
                 <div style={{width: 50, height: 5, background: "#0B8F23", marginBlock: 5, borderRadius: 8}}></div>
                 <Stack gap={10} mt={10}>
                     <Group> 
-                        <IconPhone stroke={1}  />
-                        <p style={{fontWeight: 500,fontSize: 16, }}>78 317 40 21</p>
+                        <IconPhone style={{width: rem(16), height: rem(16)}}  stroke={1}  />
+                        <p style={{fontWeight: 500,fontSize: 'small', }}>+237686824548</p>
                     </Group>
 
                     <Group> 
-                        <IconMail stroke={1}  />
-                        <p style={{fontWeight: 500,fontSize: 16, }}>contact@bridgesa.com</p>
+                        <IconMail style={{width: rem(16), height: rem(16)}} stroke={1}  />
+                        <p style={{fontWeight: 500,fontSize: 'small', }}>Dinistamwa7@gmail.com</p>
                     </Group>
 
                     <Group> 
-                        <IconMapPin stroke={1}  />
-                        <p style={{fontWeight: 500,fontSize: 16, }}>Douala, Cameroun</p>
+                        <IconMapPin style={{width: rem(16), height: rem(16)}} stroke={1}  />
+                        <p style={{fontWeight: 500,fontSize: "small", }}>Douala, Cameroun</p>
                     </Group>
                 </Stack>
                 

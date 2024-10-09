@@ -23,13 +23,13 @@ function TopBar() {
   const [opened, setOpened] = useState(false);
 
     return ( 
-        <>
-                  <div className={cx(classes.topbarContainer)}>
-        <div className="flex flex-row gap-4">
-            {/* Burger button for mobile */}
-        <div className={classes.burgerContainer}>
+    <>
+      <div className={cx(classes.topbarContainer)}>
+         {/* Burger button for mobile */}
+         <div className={classes.burgerContainer}>
           <Burger opened={opened} onClick={() => setOpened((o) => !o)} />
         </div>
+        <div>
           <Image 
             src={toplogo} 
             alt="top logo" 
@@ -38,7 +38,20 @@ function TopBar() {
           />
         </div>
 
-        
+        {/* Links container for large screens */}
+        <div className={classes.linksContainer}>
+          {links.map((l) => (
+            <Link
+              key={l?.label}
+              className={cx(classes.link, isActive(l?.link) ? classes.activeLink : null)}
+              href={l?.link}
+            >
+              {l?.label}
+            </Link>
+          ))}
+        </div>
+
+       
 
         <div>
           <Button 
@@ -55,11 +68,12 @@ function TopBar() {
       <Drawer
         opened={opened}
         onClose={() => setOpened(false)}
-        size="50%" // Adjust size as needed
+        size="75%" // Adjust size as needed
         padding="md"
         title="Navigation"
+        zIndex={9999999999999999999999999}
       >
-        <div className={classes.linksContainer}>
+        <div className={classes.mobileMenuLinks}>
           {links.map((l) => (
             <Link
               key={l?.label}

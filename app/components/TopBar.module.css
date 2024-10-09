@@ -2,33 +2,54 @@
 
 /* Basic styles for the top bar */
 .topbarContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    padding: 0 1rem;
-    background-color: #fff;
-    z-index: 10;
-  }
-  
-  .burgerContainer {
-    display: flex; /* Ensure burger is visible */
-  }
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 0 1rem;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+/* Mobile-specific hidden links */
+.burgerContainer {
+  display: none;
+}
+
+/* Mobile menu inside drawer */
+.mobileMenuLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Example styles for the link */
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.activeLink {
+  font-weight: bold;
+  color: green; /* Style for active link */
+}
+
+/* Media query for screens smaller than 768px (mobile) */
+@media (max-width: 768px) {
   .linksContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem; /* Space between links */
+    display: none; /* Hide the normal links on small screens */
   }
-  
-  /* Example styles for the link */
-  .link {
-    text-decoration: none;
-    color: black;
+
+  .burgerContainer {
+    display: flex; /* Show the burger button on small screens */
+    align-items: center;
+    justify-content: flex-end;
   }
-  
-  .activeLink {
-    font-weight: bold;
-    color: green; /* Style for active link */
-  }
+}

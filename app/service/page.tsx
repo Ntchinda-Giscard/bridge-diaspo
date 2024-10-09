@@ -3,25 +3,28 @@ import TopBanner from "../components/topBanner";
 import {services} from "@/app/components/sub-components.tsx/service-data";
 import Image from 'next/image';
 import classes from '@/app/service/css/service.module.css';
-import { Button, List, ThemeIcon, rem } from "@mantine/core";
+import { Button, List, Space, ThemeIcon, rem } from "@mantine/core";
 import { IconSquareCheckFilled} from '@tabler/icons-react';
 
 
 function Services(){
 
     return (
-        <>
+        <main>
             <TopBanner 
                 title="Nos differentes services"
                 links="Home  / Nos services"
             />
+            <Space h={30} />
             {
                 services.map((s, index) => (
-                    <div key={s?.service} className={`flex mt-20 mb-8 gap-20 ${ index%2 === 0?'flex-row' : 'flex-row-reverse'} justify-center w-screen`} >
-                        <div>
-                            <Image src={s?.image} alt={s?.service} width={400} height={400} />
+                    <div key={s?.service} style={{padding: 15}} className={`flex justify-center w-full mb-8 gap-20 ${ index%2 === 0?'md:flex-row flex-col-reverse' : 'flex-col-reverse md:flex-row-reverse'}`} >
+                        <div className={"flex justify-center"}>
+
+                            <Image src={s?.image} alt={s?.service} width={300} height={300} />
                         </div>
-                        <div className="flex flex-col" style={{ maxWidth: 400 }}>
+
+                        <div className="flex flex-col w-full justify-center" style={{ maxWidth: 400 }}>
                             <p className={classes.name}> /SERVICE </p>
                             <h2 className={classes.heading}>{s?.service}</h2>
                             <p className={classes.desc}>{s?.desc}</p>
@@ -52,7 +55,7 @@ function Services(){
                     </div>
                 ))
             }
-        </>
+        </main>
     )
 }
 
