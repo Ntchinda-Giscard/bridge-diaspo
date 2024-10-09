@@ -48,7 +48,7 @@ function Solutions() {
                 
             </div>
             <HomeContact />
-            {/* <NewsLettwer /> */}
+            <NewsLettwer />
             
         </> 
     );

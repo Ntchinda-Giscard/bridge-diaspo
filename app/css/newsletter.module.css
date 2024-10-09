@@ -8,20 +8,19 @@
   .backgroundImage {
     z-index: 1;
     width: 100%;
+    height: auto;
   }
   
   .overlayInput,
   .overlayImage {
-    position: absolute;
+    position: static;
     z-index: 2;
+    color: blue;
   }
   
   .overlayInput {
     /* width: 300px; */
     padding: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
   }
   
   .overlayImage {
@@ -30,8 +29,8 @@
   }
 
 .title{
-    top: 10%;
-    left: 10%;
+    /* top: 10%; */
+    /* left: 10%; */
     font-weight: 700;
     color: white;
     font-size: large;
@@ -40,8 +39,8 @@
 }
 
 .desc{
-  top: 30%;
-  left: 10%;
+  /* top: 30%; */
+  /* left: 10%; */
   font-weight: 300;
   font-size: small;
   color: white;

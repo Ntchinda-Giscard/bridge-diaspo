@@ -5,7 +5,7 @@ import Image from 'next/image';
 import classes from '@/app/service/css/service.module.css';
 import { Button, List, Space, ThemeIcon, rem } from "@mantine/core";
 import { IconSquareCheckFilled} from '@tabler/icons-react';
-
+import Link from 'next/link';
 
 function Services(){
 
@@ -47,7 +47,7 @@ function Services(){
                                     }
                                 </List>
                                 <div className={" h-full flex items-end "}>
-                                    <Button size="compact-md" styles={{ label:{ fontSize: 12, fontWeight: 400 } }} className="flex items-end" radius="xl" bg="#0B8F23" >En savoir plus</Button>
+                                    <Button href={"/contact"} component={Link} size="compact-md" styles={{ label:{ fontSize: 12, fontWeight: 400 } }} className="flex items-end" radius="xl" bg="#0B8F23" >En savoir plus</Button>
                                 </div>
                                 
                             </div>
