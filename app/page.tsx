@@ -20,7 +20,6 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       <div>
-      <button onClick={handleMinimize}> Minimize the Chat </button>
       <TawkMessengerReact
         propertyId="67079eb902d78d1a30ef6cbb"
         widgetId="default"
