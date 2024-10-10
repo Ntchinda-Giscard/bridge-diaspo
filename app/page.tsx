@@ -22,7 +22,7 @@ export default function Home() {
       <div>
       <TawkMessengerReact
         propertyId="67079eb902d78d1a30ef6cbb"
-        widgetId="default"
+        widgetId="1i9qs823g"
         // ref={tawkMessengerRef}
         />
         <HeroSection />
