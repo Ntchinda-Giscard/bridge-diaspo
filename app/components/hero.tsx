@@ -28,7 +28,9 @@ function HeroSection() {
             </p>
 
             <div className="flex mt-5 md:flex-row flex-col md:justify-start justify-center gap-4" >
-                <Button styles={{ label:{color: "#0B8F23", paddingInline: 18} }} variant="filled" bg='white' color="#0B8F23" radius={'xl'} > Explorer </Button>
+                <Button 
+                // onClick={"location.href='#section'"} 
+                styles={{ label:{color: "#0B8F23", paddingInline: 18} }} variant="filled" bg='white' color="#0B8F23" radius={'xl'} > Explorer </Button>
                 <Button variant='outline' color="#FFF" radius={'xl'} > 
                     Contactez nous 
                 </Button>

@@ -14,12 +14,12 @@ export default function Home() {
         <HeroSection />
         <StatSection />
         <AboutHomeSection />
-
-        {/* 
         <Services />
         <HomeContact />
         <Testimonials />
-        <NewsLettwer /> */}
+        <NewsLettwer /> 
+        {/* 
+        */}
       </div>
     </main>
   );

@@ -14,7 +14,7 @@ function Services(){
                 <Divider w={"10%"} my={20} />
             </Group>
             <Group justify='center'>
-                <div className='grid grid-cols-3 gap-4'>
+                <div className='grid md:grid-cols-3 grid-cols-1 gap-4' id="section">
 
                     {
                         services.map((s) => (
