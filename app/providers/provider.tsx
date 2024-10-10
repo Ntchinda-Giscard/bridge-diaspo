@@ -1,6 +1,10 @@
 // Import styles of packages that you've installed.
 // All packages except `@mantine/hooks` require styles imports
+"use client"
 import '@mantine/core/styles.css';
+//@ts-ignore
+import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
+
 
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 
@@ -20,7 +24,13 @@ export default function Provider({
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider>{children}</MantineProvider>
+        <MantineProvider>
+        <TawkMessengerReact
+          propertyId="67079eb902d78d1a30ef6cbb"
+          widgetId="default"
+        />
+          {children}
+        </MantineProvider>
       </body>
     </html>
   );

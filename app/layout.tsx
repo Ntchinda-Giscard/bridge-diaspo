@@ -5,6 +5,7 @@ import Provider from "./providers/provider";
 import TopBar from "./components/topbar";
 import FooterSite from "./components/footer";
 
+
 const inter = Poppins({ subsets: ["latin"], weight: ["400"]});
 
 export const metadata: Metadata = {

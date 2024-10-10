@@ -3,7 +3,7 @@ import Image from 'next/image'
 import classes from '../css/hero.module.css';
 import cx from 'clsx'
 import { Button, Group } from "@mantine/core";
-
+import Link from 'next/link';
 function HeroSection() {
     return ( <>
     <div className= {cx(["w-full", classes.hero])} >
@@ -28,9 +28,10 @@ function HeroSection() {
             </p>
 
             <div className="flex mt-5 md:flex-row flex-col md:justify-start justify-center gap-4" >
-                <Button 
-                // onClick={"location.href='#section'"} 
-                styles={{ label:{color: "#0B8F23", paddingInline: 18} }} variant="filled" bg='white' color="#0B8F23" radius={'xl'} > Explorer </Button>
+                <Button
+                    component={Link}
+                    href="#section"
+                    styles={{ label:{color: "#0B8F23", paddingInline: 18} }} variant="filled" bg='white' color="#0B8F23" radius={'xl'} > Explorer </Button>
                 <Button variant='outline' color="#FFF" radius={'xl'} > 
                     Contactez nous 
                 </Button>

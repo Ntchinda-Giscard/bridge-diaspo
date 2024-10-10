@@ -6,11 +6,12 @@ interface service{
     service: string,
     desc: string,
     image: any,
+    id: string,
 }
 
-export default function ServiceBlock({ service, desc, image }: service) {
+export default function ServiceBlock({ service, desc, image, id }: service) {
     return (
-        <div className= {classes.serviceBlock}>
+        <div id={id} className= {classes.serviceBlock}>
             <div className= {classes.imageBontainer}>
                 <Image 
                     src = {image}

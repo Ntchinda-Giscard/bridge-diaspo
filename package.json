@@ -24,6 +24,7 @@
     "@mantine/tiptap": "^7.12.1",
     "@react-google-maps/api": "^2.19.3",
     "@tabler/icons-react": "^3.12.0",
+    "@tawk.to/tawk-messenger-react": "^2.0.2",
     "@tiptap/extension-link": "^2.6.5",
     "@tiptap/react": "^2.6.5",
     "@tiptap/starter-kit": "^2.6.5",
