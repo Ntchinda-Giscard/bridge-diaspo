@@ -7,6 +7,7 @@ import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 
 
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import AuthProvider from './AuthProvider';
 
 export const metadata = {
   title: 'My Mantine app',
@@ -25,11 +26,13 @@ export default function Provider({
       </head>
       <body>
         <MantineProvider>
-        <TawkMessengerReact
-          propertyId="67079eb902d78d1a30ef6cbb"
-          widgetId="1i9qs823g"
-        />
+          <AuthProvider>
+          <TawkMessengerReact
+            propertyId="67079eb902d78d1a30ef6cbb"
+            widgetId="1i9qs823g"
+          />
           {children}
+          </AuthProvider>
         </MantineProvider>
       </body>
     </html>
