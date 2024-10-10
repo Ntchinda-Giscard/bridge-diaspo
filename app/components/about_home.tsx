@@ -20,7 +20,10 @@ function AboutHomeSection(){
                         {"Le Lorem Ipsum est simplement du faux texte utilisé dans la composition et la mise en page avant impression. Il est le faux texte standard de l'industrie depuis les années 1500, lorsqu'un imprimeur anonyme a pris une galée de caractères et les a mélangés pour créer un livre de spécimens de caractères. Il a survécu non seulement à cinq "}
                     </p>
                     <div  className="flex flex-col gap-3 md:flex-row ">
-                        <Button styles={{ label:{color: "#fff", paddingInline: 20} }} px={15} radius ="xl" bg="#0B8F23" > Explorer </Button>
+                        <Button 
+                            component={Link}
+                            href={"#section"}
+                            styles={{ label:{color: "#fff", paddingInline: 20} }} px={15} radius ="xl" bg="#0B8F23" > Explorer </Button>
                         <Button 
                             component={Link}
                             href={"/contact"}
