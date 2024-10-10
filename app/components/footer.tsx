@@ -49,7 +49,8 @@ function FooterSite() {
             </div>
             <Divider my={20} />
             <div className= " flex md:flex-row md:justify-between flex-col justify-center items-center mb-5 " >
-                <p className={classes.copywrite} >© 2024 Bizdzv.Store - Made with ❤️ by NG </p>
+                <p className={classes.copywrite} >© 2024 Bridge.SA  </p>
+                {/* - Made with ❤️ by NG */}
                 <Group gap={2}>
                     <IconBrandFacebook style={{ cursor: "pointer" }} stroke={1} />
                     <IconBrandInstagram style={{ cursor: "pointer" }} stroke={1} />
