@@ -3,9 +3,21 @@ import agri from "@/public/assets/agri.jpg";
 import pub from "@/public/assets/pub.jpg";
 import trans from "@/public/assets/trans.jpg";
 import legal from "@/public/assets/legal.jpg";
-import tour from "@/public/assets/tour.jpg"
+import tour from "@/public/assets/tour.jpg";
+import indus from  "@/public/assets/WhatsApp Image 2024-10-10 at 20.35.50.jpeg"
 
 export const services = [
+    {service: "Bridge création d’entreprise ", desc: "Avec Brdge SA créer votre entreprise en Afrique, où que vous soyez !", image: indus, 
+        points:[
+            "Idée et étude de marché",
+            "Business plan",
+            "Choix du statut juridique",
+            "Immatriculation",
+            "Financement",
+            "Mise en place des opérations",
+            "Communication et marketing"
+        ]
+    },
     {service: "Bridge. Immobiliere", desc: "Le service immobilier de Bridge SA gère l'achat, la vente, et la location de biens pour la diaspora camerounaise.", image: immo, 
     points: [
         "Vente de biens immobiliers",
@@ -25,7 +37,7 @@ export const services = [
             "Services de conseil et de formation",
         ]
     },
-    
+
     {service: "Bridge. Douane et transit", desc: "Notre service douane et transit gère efficacement les formalités douanières, le dédouanement et le transport international pour un passage fluide.", image: trans,
         points:[
             "Contrôle des marchandises entrant et sortant du pays",
