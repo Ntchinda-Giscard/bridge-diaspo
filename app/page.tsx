@@ -10,14 +10,16 @@ import NewsLettwer from "./components/newsletter";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <div style={{ paddingTop: '5%' }}>
+      <div>
         <HeroSection />
         <StatSection />
         <AboutHomeSection />
+
+        {/* 
         <Services />
         <HomeContact />
         <Testimonials />
-        <NewsLettwer />
+        <NewsLettwer /> */}
       </div>
     </main>
   );

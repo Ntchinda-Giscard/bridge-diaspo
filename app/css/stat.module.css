@@ -1,11 +1,11 @@
 .stats_value{
-    font-size: 15px;
+    font-size: small;
     font-weight: 700;
     color: #0B8F23;
 }
 
 .stat_label{
-    font-size: 12px;
+    font-size: smaller;
     font-weight: 400;
 }
 
@@ -13,7 +13,13 @@
     position: relative;
     transform: translateY(-50%);
     background: white;
-    z-index: 99999;
+    z-index: 9;
     padding: 20px;
     box-shadow: 10px 10px 10px #2825230A;
+}
+
+@media (min-width: 200px) and (max-width: 767px){
+    .stats{
+        transform: translateY(0%);
+    }
 }

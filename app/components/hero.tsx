@@ -7,21 +7,33 @@ import { Button, Group } from "@mantine/core";
 function HeroSection() {
     return ( <>
     <div className= {cx(["w-full", classes.hero])} >
-        <Image src={hero_img} layout='responsive' objectFit="cover" sizes="width: 100vw" alt="hero image"   />
+        <Image 
+            src={hero_img} 
+            // layout='responsive' 
+            objectFit="cover" 
+            layout="fill"
+            sizes="width: 100vw" 
+            // style={{
+            //     height:'auto'
+            // }}
+            alt="hero image"   
+        />
         <div className={classes.overlay}></div>
         <div className={classes.hero_text}>
-            <h1 className={classes.hero_title}>
+            <p className={classes.hero_title}>
                 Bienvenue chez Bridge. SA
-            </h1>
+            </p>
             <p className={classes.hero_desc}>
                {" Le lien solide avec votre pays d'origine, votre allier de confiance ici et la bas.rentrer chez vous par ici!"}
             </p>
 
-            <Group justify="start" gap={10} mt={15} >
+            <div className="flex mt-5 md:flex-row flex-col md:justify-start justify-center gap-4" >
                 <Button styles={{ label:{color: "#0B8F23", paddingInline: 18} }} variant="filled" bg='white' color="#0B8F23" radius={'xl'} > Explorer </Button>
-                <Button variant='outline' color="#FFF" radius={'xl'} > Contactez nous </Button>
-            </Group>
-      </div>
+                <Button variant='outline' color="#FFF" radius={'xl'} > 
+                    Contactez nous 
+                </Button>
+            </div>
+        </div>
     </div>
     </> );
 }

@@ -71,7 +71,11 @@ function TopBar() {
         size="75%" // Adjust size as needed
         padding="md"
         title="Navigation"
-        zIndex={9999999999999999999999999}
+        styles={{
+          body:{
+            zIndex: 999999999999999999999
+          }
+        }}
       >
         <div className={classes.mobileMenuLinks}>
           {links.map((l) => (
