@@ -18,14 +18,14 @@ function AboutHomeSection(){
                     <p className={classes.desc_text}>
                         {"Le Lorem Ipsum est simplement du faux texte utilisé dans la composition et la mise en page avant impression. Il est le faux texte standard de l'industrie depuis les années 1500, lorsqu'un imprimeur anonyme a pris une galée de caractères et les a mélangés pour créer un livre de spécimens de caractères. Il a survécu non seulement à cinq "}
                     </p>
-                    <Group>
+                    <div  className="flex flex-col gap-3 md:flex-row ">
                         <Button styles={{ label:{color: "#fff", paddingInline: 20} }} px={15} radius ="xl" bg="#0B8F23" > Explorer </Button>
                         <Button 
                             radius="xl" 
                             variant="outline"
                             color="#0B8F23"
                             > Contactez nous </Button>
-                    </Group>
+                    </div>
                 </div>
                 <Image src={about_img} className=" " alt="about" />
             </div>

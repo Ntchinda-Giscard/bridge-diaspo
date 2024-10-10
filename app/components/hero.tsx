@@ -24,7 +24,7 @@ function HeroSection() {
                 Bienvenue chez Bridge. SA
             </p>
             <p className={classes.hero_desc}>
-               {" Le lien solide avec votre pays d'origine, votre allier de confiance ici et la bas.rentrer chez vous par ici!"}
+               {" Le lien solide avec votre pays d’origine votre allié de confiance ici et là-bas!"}
             </p>
 
             <div className="flex mt-5 md:flex-row flex-col md:justify-start justify-center gap-4" >
@@ -32,7 +32,7 @@ function HeroSection() {
                     component={Link}
                     href="#section"
                     styles={{ label:{color: "#0B8F23", paddingInline: 18} }} variant="filled" bg='white' color="#0B8F23" radius={'xl'} > Explorer </Button>
-                <Button variant='outline' color="#FFF" radius={'xl'} > 
+                <Button component={Link} href="/contact" variant='outline' color="#FFF" radius={'xl'} > 
                     Contactez nous 
                 </Button>
             </div>
