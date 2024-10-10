@@ -18,7 +18,7 @@ function Services(){
             <Space h={30} />
             {
                 services.map((s, index) => (
-                    <div key={s?.service} style={{padding: 15}} className={`flex justify-center w-full mb-8 gap-20 ${ index%2 === 0?'md:flex-row flex-col-reverse' : 'flex-col-reverse md:flex-row-reverse'}`} >
+                    <div id={`${s?.service}`} key={s?.service} style={{padding: 15}} className={`flex justify-center w-full mb-8 gap-20 ${ index%2 === 0?'md:flex-row flex-col-reverse' : 'flex-col-reverse md:flex-row-reverse'}`} >
                         <div className={"flex justify-center"}>
 
                             <Image src={s?.image} alt={s?.service} width={300} height={300} />

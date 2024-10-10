@@ -24,7 +24,7 @@ export default function Home() {
         propertyId="67079eb902d78d1a30ef6cbb"
         widgetId="1i9qs823g"
         // ref={tawkMessengerRef}
-        />
+      />
         <HeroSection />
         <StatSection />
         <AboutHomeSection />

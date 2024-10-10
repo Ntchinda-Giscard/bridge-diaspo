@@ -25,6 +25,7 @@ export const services = [
             "Services de conseil et de formation",
         ]
     },
+    
     {service: "Bridge. Douane et transit", desc: "Notre service douane et transit gère efficacement les formalités douanières, le dédouanement et le transport international pour un passage fluide.", image: trans,
         points:[
             "Contrôle des marchandises entrant et sortant du pays",

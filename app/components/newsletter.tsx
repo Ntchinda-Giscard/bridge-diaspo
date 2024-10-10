@@ -28,7 +28,7 @@ export default function NewsLettwer() {
               radius="xl"
               placeholder="example@xyz.com"
               // style={{ top: '20%', left: '-10%', }}
-              w={250}
+              w={200}
             />
             <Button
               variant="gradient"
@@ -40,13 +40,13 @@ export default function NewsLettwer() {
             </Button>
           </div>
           
-          <Group w={200}>
+          <div className="flex justify-center md:justify-start items-center gap-3 ">
             <div className={classes.iconWrapper}> 
               <IconBrandFacebookFilled style={{cursor: 'pointer'}} stroke={0.5} color="#FFF" />
             </div>
             <IconBrandInstagram style={{cursor: 'pointer'}} stroke={1} color="#FFF" />
             <IconBrandXFilled style={{cursor: 'pointer'}} stroke={1} color="#FFF" />
-          </Group>
+          </div>
         </div>
       </div>
     </div>
