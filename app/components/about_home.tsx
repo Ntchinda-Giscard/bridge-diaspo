@@ -3,6 +3,7 @@ import {Button, Group, Stack} from '@mantine/core';
 import logo from '@/public/assets/topLogo.svg';
 import about_img from '@/public/assets/about.svg';
 import classes from "@/app/auth/login/css/about.module.css";
+import Link from "next/link"
 
 function AboutHomeSection(){
 
@@ -21,6 +22,8 @@ function AboutHomeSection(){
                     <div  className="flex flex-col gap-3 md:flex-row ">
                         <Button styles={{ label:{color: "#fff", paddingInline: 20} }} px={15} radius ="xl" bg="#0B8F23" > Explorer </Button>
                         <Button 
+                            component={Link}
+                            href={"/contact"}
                             radius="xl" 
                             variant="outline"
                             color="#0B8F23"
