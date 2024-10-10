@@ -8,8 +8,8 @@ function AboutHomeSection(){
 
     return(
         <>
-            <div className= " flex flex-row w-screen gap-6 p-10 ">
-                <div className=" w-1/2 flex flex-col gap-6 " >
+            <div className= " flex flex-col-reverse lg:flex-row w-screen gap-6 p-10 ">
+                <div className=" flex flex-col gap-6 " >
                     <Image height={20} width={108} src={logo} alt="logo" />
                     <p className={classes.catchtext}>
                         VOTRE PARTENAIRE POUR TOUS 
@@ -27,9 +27,7 @@ function AboutHomeSection(){
                             > Contactez nous </Button>
                     </Group>
                 </div>
-                <div className= " w-1/2 " >
-                    <Image src={about_img} alt="about" />
-                </div>
+                <Image src={about_img} className=" " alt="about" />
             </div>
         </>
     )
