@@ -7,7 +7,7 @@ import tour from "@/public/assets/tour.jpg";
 import indus from  "@/public/assets/WhatsApp Image 2024-10-10 at 20.35.50.jpeg"
 
 export const services = [
-    {service: "Bridge création d’entreprise ", desc: "Avec Brdge SA créer votre entreprise en Afrique, où que vous soyez !", image: indus, 
+    {service: "Bridge création d’entreprise ", desc: "Avec Bridge SA créer votre entreprise en Afrique, où que vous soyez !", image: indus, 
         points:[
             "Idée et étude de marché",
             "Business plan",
