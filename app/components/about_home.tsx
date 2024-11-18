@@ -11,7 +11,20 @@ function AboutHomeSection(){
         <>
             <div className= " flex flex-col-reverse lg:flex-row w-screen gap-6 p-10 ">
                 <div className=" flex flex-col gap-6 " >
-                    <Image height={20} width={108} src={logo} alt="logo" />
+                    {/* <Image height={20} width={108} src={logo} alt="logo" /> */}
+                    <video
+                        autoPlay
+                        loop
+                        style={{
+                            width: 108,
+                            height: 20,
+                            objectFit: 'cover'
+                        }}
+                    >
+                        <source src="@/public/assets/VIDEO-2024-11-06-16-22-47.mp4" type="video/mp4" />
+                        Your videotag is not supported
+
+                    </video>
                     <p className={classes.catchtext}>
                         Votre partenaire pour tout vos services sur mesure
                     </p>
