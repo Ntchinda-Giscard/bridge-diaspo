@@ -4,6 +4,7 @@ import classes from "@/app/css/newsletter.module.css";
 import cx from 'clsx'
 import { Button, Group, Stack, TextInput } from '@mantine/core';
 import { IconBrandFacebookFilled, IconBrandInstagram, IconBrandXFilled } from '@tabler/icons-react';
+import Link from 'next/link';
 
 export default function NewsLettwer() {
   return (
@@ -42,7 +43,9 @@ export default function NewsLettwer() {
           
           <div className="flex justify-center md:justify-start items-center gap-3 ">
             <div className={classes.iconWrapper}> 
+            <Link href={'https://www.facebook.com/goshenbridgeSA?mibextid=LQQJ4d'}>
               <IconBrandFacebookFilled style={{cursor: 'pointer'}} stroke={0.5} color="#FFF" />
+            </Link>
             </div>
             <IconBrandInstagram style={{cursor: 'pointer'}} stroke={1} color="#FFF" />
             <IconBrandXFilled style={{cursor: 'pointer'}} stroke={1} color="#FFF" />

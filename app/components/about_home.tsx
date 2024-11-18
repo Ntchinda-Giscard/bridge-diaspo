@@ -9,22 +9,10 @@ function AboutHomeSection(){
 
     return(
         <>
-            <div className= " flex flex-col-reverse lg:flex-row w-screen gap-6 p-10 ">
+            <div className= " flex flex-col-reverse justify-between lg:flex-row w-screen gap-6 p-10 ">
                 <div className=" flex flex-col gap-6 " >
-                    {/* <Image height={20} width={108} src={logo} alt="logo" /> */}
-                    <video
-                        autoPlay
-                        loop
-                        style={{
-                            width: 108,
-                            height: 20,
-                            objectFit: 'cover'
-                        }}
-                    >
-                        <source src="@/public/assets/VIDEO-2024-11-06-16-22-47.mp4" type="video/mp4" />
-                        Your videotag is not supported
-
-                    </video>
+                    <Image height={20} width={108} src={logo} alt="logo" />
+                    
                     <p className={classes.catchtext}>
                         Votre partenaire pour tout vos services sur mesure
                     </p>
@@ -45,7 +33,22 @@ function AboutHomeSection(){
                             > Contactez nous </Button>
                     </div>
                 </div>
-                <Image src={about_img} className=" " alt="about" />
+                {/* <Image src={about_img} className=" " alt="about" /> */}
+                <video
+                    controls
+                    autoPlay
+                    loop
+                    style={{
+                        width: '100%',
+                        height: '100%',
+                        borderRadius: '8px',
+                        boxShadow: '0 4px 8px rgba(0,0,0, 0.2)'
+                    }}
+                >
+                    <source src={"/assets/VIDEO-2024-11-06-16-22-47.mp4"} type="video/mp4" />
+                    Your video tag is not supported
+
+                </video>
             </div>
         </>
     )
