@@ -32,7 +32,7 @@ function HeroSection() {
                     component={Link}
                     href="#section"
                     styles={{ label:{color: "#0B8F23", paddingInline: 18} }} variant="filled" bg='white' color="#0B8F23" radius={'xl'} > Explorer </Button>
-                <Button component={Link} href="/contact" variant='outline' color="#FFF" radius={'xl'} > 
+                <Button component={Link} href="/site/contact" variant='outline' color="#FFF" radius={'xl'} >
                     Contactez nous 
                 </Button>
             </div>

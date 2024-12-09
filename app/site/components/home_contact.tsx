@@ -11,7 +11,7 @@ function HomeContact(){
                 <Group justify='center'>
                     <Button 
                         component={Link}
-                        href={"/contact"}
+                        href={"/site/contact"}
                         mt={20}
                         // className= {} 
                         radius={'xl'}

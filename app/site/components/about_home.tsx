@@ -26,7 +26,7 @@ function AboutHomeSection(){
                             styles={{ label:{color: "#fff", paddingInline: 20} }} px={15} radius ="xl" bg="#0B8F23" > Explorer </Button>
                         <Button 
                             component={Link}
-                            href={"/contact"}
+                            href={"/site/contact"}
                             radius="xl" 
                             variant="outline"
                             color="#0B8F23"
