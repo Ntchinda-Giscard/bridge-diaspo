@@ -4,7 +4,7 @@ import ServiceBlock from "./sub-components.tsx/service_block";
 import { services } from "./sub-components.tsx/service-data";
 
 
-function Services(){
+function Services(){ 
 
     return(
         <>

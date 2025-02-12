@@ -16,14 +16,14 @@ function AboutHomeSection(){
                         // fw={900}
                         className={classes.gradientText}
                     >
-                        The Bridge
+                        THE BRIDGE
                     </Text>
                     
                     <p className={classes.catchtext}>
                         Votre partenaire pour tout vos services sur mesure
                     </p>
                     <p className={classes.desc_text}>
-                        {"Bienvenue chez Bridge SA, votre partenaire privilégié pour tous les services dont vous avez besoin. Nous sommes dédiés à simplifier votre quotidien en vous offrant une gamme complète de solutions adaptées à chaque aspect de votre vie. Notre mission est de fournir des services de qualité supérieure, allant de l’entretien ménager et des réparations, à la gestion des tâches administratives et bien plus encore. Notre équipe d’experts est prête à répondre à vos besoins spécifiques, garantissant ainsi votre satisfaction. Chez Bridge SA, nous croyons que chaque client mérite un service personnalisé. C’est pourquoi nous mettons un point d’honneur à écouter vos attentes et à vous offrir des solutions sur mesure. Rejoignez-nous pour découvrir la tranquillité d’esprit que procure un service fiable et efficace. Simplifiez votre vie, confiez-nous vos besoins !"}
+                        {"Bienvenue chez THE BRIDGE, votre partenaire privilégié pour tous les services dont vous avez besoin. Nous sommes dédiés à simplifier votre quotidien en vous offrant une gamme complète de solutions adaptées à chaque aspect de votre vie. Notre mission est de fournir des services de qualité supérieure, allant de l’entretien ménager et des réparations, à la gestion des tâches administratives et bien plus encore. Notre équipe d’experts est prête à répondre à vos besoins spécifiques, garantissant ainsi votre satisfaction. Chez THE BRIDGE, nous croyons que chaque client mérite un service personnalisé. C’est pourquoi nous mettons un point d’honneur à écouter vos attentes et à vous offrir des solutions sur mesure. Rejoignez-nous pour découvrir la tranquillité d’esprit que procure un service fiable et efficace. Simplifiez votre vie, confiez-nous vos besoins !"}
                     </p>
                     <div  className="flex flex-col gap-3 md:flex-row ">
                         <Button 
