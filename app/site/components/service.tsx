@@ -1,5 +1,5 @@
 import classes from "@/app/site/css/seivce.module.css";
-import { Divider, Group } from "@mantine/core";
+import { Divider, Group, Box } from "@mantine/core";
 import ServiceBlock from "./sub-components.tsx/service_block";
 import { services } from "./sub-components.tsx/service-data";
 
@@ -18,13 +18,15 @@ function Services(){
 
                     {
                         services.map((s) => (
-                            <ServiceBlock 
-                                link={`#${s?.service}`}
-                                key={s?.service}
-                                service = {s?.service}
-                                desc={s?.desc}
-                                image={s?.image}
-                            />
+                            <Box>
+                                <ServiceBlock 
+                                    link={`/site/service#${s?.service}`}
+                                    key={s?.service}
+                                    service = {s?.service}
+                                    desc={s?.desc}
+                                    image={s?.image}
+                                />
+                            </Box>
                         ))
                     }
                 </div>
