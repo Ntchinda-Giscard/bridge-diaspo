@@ -10,7 +10,7 @@ function AboutHomeSection(){
     return(
         <>
             <div className= " flex flex-col-reverse justify-between lg:flex-row w-full gap-6 p-10 ">
-                <div className=" w-full flex flex-col gap-6 " >
+                <div className=" w-full md:w-2/5 flex flex-col gap-6 " >
                     <Text
                         fz='lg'
                         // fw={900}
@@ -40,14 +40,14 @@ function AboutHomeSection(){
                     </div>
                 </div>
                 {/* <Image src={about_img} className=" " alt="about" /> */}
-                <div className={"w-3/5"}>
+                <div className={"w-full md:w-3/5"}>
                     <video
                         controls
                         autoPlay
                         loop
                         style={{
-                            width: '100vw',
-                            height: '100%',
+                            width: '100%',
+                            // height: '100%',
                             borderRadius: '8px',
                             boxShadow: '0 4px 8px rgba(0,0,0, 0.2)'
                         }}
