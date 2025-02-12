@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import {Button, Group, Stack} from '@mantine/core';
+import {Button, Group, Stack, Text } from '@mantine/core';
 import logo from '@/public/assets/topLogo.svg';
 import about_img from '@/public/assets/about.svg';
 import classes from "@/app/auth/login/css/about.module.css";
@@ -11,7 +11,13 @@ function AboutHomeSection(){
         <>
             <div className= " flex flex-col-reverse justify-between lg:flex-row w-full gap-6 p-10 ">
                 <div className=" w-full flex flex-col gap-6 " >
-                    <Image height={20} width={108} src={logo} alt="logo" />
+                    <Text
+                        fz='lg'
+                        // fw={900}
+                        className={classes.gradientText}
+                    >
+                        The Bridge
+                    </Text>
                     
                     <p className={classes.catchtext}>
                         Votre partenaire pour tout vos services sur mesure
@@ -40,8 +46,8 @@ function AboutHomeSection(){
                         autoPlay
                         loop
                         style={{
-                            width: '100%',
-                            // height: '100%',
+                            width: '100vw',
+                            height: '100%',
                             borderRadius: '8px',
                             boxShadow: '0 4px 8px rgba(0,0,0, 0.2)'
                         }}

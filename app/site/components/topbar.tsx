@@ -3,7 +3,7 @@ import Image from 'next/image';
 import toplogo from '@/public/assets/topLogo.svg';
 import {links} from '@/app/site/links';
 import Link from 'next/link'
-import { Button, Burger, Drawer } from '@mantine/core';
+import { Button, Burger, Drawer, Text } from '@mantine/core';
 import cx from 'clsx';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
@@ -29,12 +29,20 @@ function TopBar() {
           <Burger opened={opened} onClick={() => setOpened((o) => !o)} />
         </div>
         <div>
-          <Image 
+          
+          {/* <Image 
             src={toplogo} 
             alt="top logo" 
             width={100} 
             height={30} 
-          />
+          /> */}
+          <Text
+            fz='lg'
+            // fw={900}
+            className={classes.gradientText}
+          >
+            The Bridge
+          </Text>
         </div>
 
         {/* Links container for large screens */}
