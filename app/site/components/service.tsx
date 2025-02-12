@@ -18,7 +18,6 @@ function Services(){
 
                     {
                         services.map((s) => (
-                            <Box>
                                 <ServiceBlock 
                                     link={`/site/service#${s?.service}`}
                                     key={s?.service}
@@ -26,7 +25,6 @@ function Services(){
                                     desc={s?.desc}
                                     image={s?.image}
                                 />
-                            </Box>
                         ))
                     }
                 </div>
