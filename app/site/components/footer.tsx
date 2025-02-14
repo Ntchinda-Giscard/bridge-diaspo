@@ -1,4 +1,4 @@
-import logo from "@/public/assets/logo.svg";
+import logo from "@/public/assets/image.png";
 import Image from 'next/image';
 import classes from "@/app/site/css/footer.module.css";
 import {links}  from "@/app/site/links";

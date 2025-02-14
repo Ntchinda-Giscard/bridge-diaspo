@@ -21,7 +21,7 @@ function HeroSection() {
         <div className={classes.overlay}></div>
         <div className={classes.hero_text}>
             <p className={classes.hero_title}>
-                Bienvenue chez Bridge. SA
+                Bienvenue chez THE BRIDGE
             </p>
             <p className={classes.hero_desc}>
                {" Le lien solide avec votre pays d’origine votre allié de confiance ici et là-bas!"}
