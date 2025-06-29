@@ -57,7 +57,7 @@ export default function NewsLettwer() {
                   insertSubscriber({ variables: { emails } })
                     .then(response => {
                       console.log("Subscription successful", response);
-                    })
+                      alert("Subscription successful! Thank you for subscribing.");})
                     .catch(err => {
                       console.error("Subscription error", err);
                     });
