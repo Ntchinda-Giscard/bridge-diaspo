@@ -7,7 +7,7 @@ import tour from "@/public/assets/tour.jpg";
 import indus from "@/public/assets/WhatsApp Image 2024-10-10 at 20.35.50.jpeg"
 
 export const services = [
-    {service: "Bridge création d’entreprise ", desc: "Avec Bridge SA créer votre entreprise en Afrique, où que vous soyez !", image: indus, 
+    {service: "Bridge création d’entreprise ", desc: "Avec The Bridge créer votre entreprise en Afrique, où que vous soyez !", image: indus, 
         points:[
             "Idée et étude de marché",
             "Business plan",
@@ -18,7 +18,7 @@ export const services = [
             "Communication et marketing"
         ]
     },
-    {service: "Bridge. Immobiliere", desc: "Le service immobilier de Bridge SA gère l'achat, la vente, et la location de biens pour la diaspora camerounaise.", image: immo, 
+    {service: "Bridge. Immobiliere", desc: "Le service immobilier de The Bridge gère l'achat, la vente, et la location de biens pour la diaspora camerounaise.", image: immo, 
         points: [
             "Vente de biens immobiliers",
             "Location de biens",
@@ -27,7 +27,7 @@ export const services = [
             "Conseils en investissement immobilier"
         ]
     },
-    {service: "Bridge. agriculture", desc: "Le service agriculture de Bridge SA aide la diaspora à investir dans des projets agricoles au Cameroun, offrant expertise et gestion.", image: agri,
+    {service: "Bridge. agriculture", desc: "Le service agriculture de The Bridge aide la diaspora à investir dans des projets agricoles au Cameroun, offrant expertise et gestion.", image: agri,
         points:[
             "Production de cultures",
             "Protection des cultures",
@@ -46,7 +46,7 @@ export const services = [
             "Facilitation du transport des marchandises à travers les frontières en respectant les règles et les procédures douanières",
         ]
     },
-    {service: "Bridge. Traveaux  public", desc: "Le service travaux publics de Bridge SA supervise la réalisation de projets d'infrastructures au Cameroun, assurant qualité et conformité pour la diaspora.", image: pub,
+    {service: "Bridge. Traveaux  public", desc: "Le service travaux publics de The Bridge supervise la réalisation de projets d'infrastructures au Cameroun, assurant qualité et conformité pour la diaspora.", image: pub,
         points:[
             "Travaux de voirie",
             "Travaux d'assainissement",
@@ -55,14 +55,14 @@ export const services = [
             "Travaux de terrassement",
         ]
     },
-    {service: "Bridge. Autorisation et légalisation des documents", desc: "Bridge SA facilite la légalisation et l'obtention de documents officiels pour la diaspora camerounaise.", image: legal,
+    {service: "Bridge. Autorisation et légalisation des documents", desc: "The Bridge facilite la légalisation et l'obtention de documents officiels pour la diaspora camerounaise.", image: legal,
         points:[
             "Légalisation de signature",
             "Légalisation de documents administratifs",
             "Légalisation de documents notariés",
         ]
     },
-    {service: "Bridge. Tourisme", desc: "Bridge SA offre des voyages sur mesure, incluant visites guidées, hébergement, et expériences uniques pour des souvenirs inoubliables.", image: tour,
+    {service: "Bridge. Tourisme", desc: "The Bridge offre des voyages sur mesure, incluant visites guidées, hébergement, et expériences uniques pour des souvenirs inoubliables.", image: tour,
         points:[
             "Visites guidées",
             "Réservation d'hôtels",
