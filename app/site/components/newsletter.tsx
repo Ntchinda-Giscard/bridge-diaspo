@@ -1,3 +1,4 @@
+"use client";
 import Image from 'next/image';
 import newsletter from "@/public/assets/newsletter.svg";
 import classes from "@/app/site/css/newsletter.module.css";
@@ -5,8 +6,14 @@ import cx from 'clsx'
 import { Button, Group, Stack, TextInput } from '@mantine/core';
 import { IconBrandFacebookFilled, IconBrandInstagram, IconBrandXFilled } from '@tabler/icons-react';
 import Link from 'next/link';
+import { useMutation } from '@apollo/client';
+import { ADD_SUBSCRIBER } from './mutation';
+import { useState } from 'react';
 
 export default function NewsLettwer() {
+  const [insertSubscriber, { data, loading, error }] = useMutation(ADD_SUBSCRIBER)
+  const [ emails, setEmails ] = useState<string | null>(null);
+
   return (
     <div className= {classes.imageContainer}>
       <Image
@@ -30,12 +37,34 @@ export default function NewsLettwer() {
               placeholder="example@xyz.com"
               // style={{ top: '20%', left: '-10%', }}
               w={200}
+              onChange={(e) => {
+                const value = e.target.value;
+                if (value && value.includes('@')) {
+                  setEmails(value);
+                } else {
+                  setEmails(null);
+                }
+              }}
             />
             <Button
               variant="gradient"
               gradient={{ from: '#0B8F23', to: '#03290A', deg: 180 }}
               radius={'xl'}
               style={{ transform: 'translateX(-30px)' }}
+              loading={loading}
+              onClick={() => {
+                if (emails) {
+                  insertSubscriber({ variables: { emails } })
+                    .then(response => {
+                      console.log("Subscription successful", response);
+                    })
+                    .catch(err => {
+                      console.error("Subscription error", err);
+                    });
+                } else {
+                  alert("Please enter a valid email address");
+                }
+              }}
             > 
               Abonnez-vous
             </Button>
