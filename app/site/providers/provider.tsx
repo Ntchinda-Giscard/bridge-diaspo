@@ -4,6 +4,8 @@
 import '@mantine/core/styles.css';
 //@ts-ignore
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
+import { Toaster } from 'react-hot-toast';
+
 
 
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
@@ -45,6 +47,8 @@ export default function Provider({
         <ColorSchemeScript />
       </head>
       <body>
+                  <Toaster />
+
         <MantineProvider>
           <ApolloProvider client={client}>
             <AuthProvider>

@@ -59,6 +59,8 @@ export default function NewsLettwer() {
                       console.log("Subscription successful", response);
                       alert("Subscription successful! Thank you for subscribing.");})
                     .catch(err => {
+                      alert("Subscription failed. Please try again later.");
+                      // Handle error appropriately
                       console.error("Subscription error", err);
                     });
                 } else {

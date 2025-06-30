@@ -11,12 +11,18 @@ function SignUpForm(){
             email: '',
             password: '',
             confirmPassword: '',
+            country: '',
+            name: '',
+            surname: '',
+            telephone: '',
         },
 
         validate: {
             email: (value) => (/^\S+@\S+$/.test(value) ? null : 'Email invalide'),
             password: (value) => ((value.length <= 6) ? "Short password" : null),
-            confirmPassword: (value) => ((value !== "") ? "Short password" : null),
+            confirmPassword: (value) => ((value.length <= 6)  ? "Short password" : null),
+
+
         },
     });
     return(
@@ -25,6 +31,70 @@ function SignUpForm(){
                 onSubmit={form.onSubmit((values) => console.log(values))}
                 className={classes.form}
             >
+                <div className='flex md:flex-row flex-col gap-5'>
+
+                    <TextInput
+                        withAsterisk
+                        w={"100%"}
+                        variant="filled"
+                        label="Nom"
+                        placeholder=""
+                        key={form.key('name')}
+                        {...form.getInputProps('name')}
+                        styles={{
+                            required:{
+                                color: "#0B8F23"
+                            }
+                        }}
+                    />
+                    <TextInput
+                        withAsterisk
+                        w={"100%"}
+                        variant="filled"
+                        label="Prénom"
+                        placeholder=""
+                        key={form.key('surname')}
+                        {...form.getInputProps('surname')}
+                        styles={{
+                            required:{
+                                color: "#0B8F23"
+                            }
+                        }}
+                    />
+                </div>
+
+                <div className='flex md:flex-row flex-col gap-5'>
+
+                    <TextInput
+                        withAsterisk
+                        w={"100%"}
+                        variant="filled"
+                        label="Pays"
+                        placeholder=""
+                        key={form.key('country')}
+                        {...form.getInputProps('country')}
+                        styles={{
+                            required:{
+                                color: "#0B8F23"
+                            }
+                        }}
+                    />
+                    <TextInput
+                        withAsterisk
+                        w={"100%"}
+                        variant="filled"
+                        label="Téléphone"
+                        placeholder=""
+                        key={form.key('telephone')}
+                        {...form.getInputProps('telephone')}
+                        styles={{
+                            required:{
+                                color: "#0B8F23"
+                            }
+                        }}
+                    />
+                </div>
+
                 <TextInput
                     withAsterisk
                     w={"100%"}
