@@ -3,8 +3,11 @@ import { Button, Text, Group, PasswordInput, TextInput } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import classes from '../login/css/login.module.css';
 import Link from 'next/link'
+import { useMutation } from '@apollo/client';
+import { SIGNUP_MUTATION } from '../signup/mutation';
 
 function SignUpForm(){
+    const [signin, { data, loading, error }] = useMutation(SIGNUP_MUTATION);
     const form = useForm({
         mode: 'uncontrolled',
         initialValues: {
@@ -21,6 +24,10 @@ function SignUpForm(){
             email: (value) => (/^\S+@\S+$/.test(value) ? null : 'Email invalide'),
             password: (value) => ((value.length <= 6) ? "Short password" : null),
             confirmPassword: (value) => ((value.length <= 6)  ? "Short password" : null),
+            country: (value) => ((value.length <= 2) ? "Invalid country" : null),
+            telephone: (value) => ((value.length <= 6)  ? "Invalid telephone" : null),
+            name: (value) => ((value.length <= 2) ? "Invalid name" : null),
+            surname: (value) => ((value.length <= 2)  ? "Invalid surname" : null),
 
 
         },
@@ -28,7 +35,26 @@ function SignUpForm(){
     return(
         <>
             <form
-                onSubmit={form.onSubmit((values) => console.log(values))}
+                onSubmit={form.onSubmit((values) => {console.log(values)
+                    signin({
+                        variables: {
+                            nom: values.name,
+                            prenom: values.surname,
+                            telephone: values.telephone,
+                            email: values.email,
+                            mot_passe: values.password,
+                            country: values.country
+                        }
+                    }).then(response => {
+                        console.log("Sign up successful", response);
+                        alert("Sign up successful! Welcome aboard.");
+                        form.reset();
+                    }).catch(error => {
+                        console.error("Error signing up", error);
+                        alert("An error occurred during sign up. Please try again.");
+                    });
+                }
+                )}
                 className={classes.form}
             >
                 <div className='flex md:flex-row flex-col gap-5'>
@@ -143,7 +169,7 @@ function SignUpForm(){
                 />
 
                 <Group grow mt="md">
-                    <Button bg="#0B8F23" type="submit">{"S'inscrire"}</Button>
+                    <Button bg="#0B8F23" loading={loading} type="submit">{"S'inscrire"}</Button>
                 </Group>
                 <Group justify='center' gap={2}>
                     <p style={{ color: "#00000099" }}> {"Vous avez deja un compte ?"} </p>
