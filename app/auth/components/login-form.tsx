@@ -3,11 +3,11 @@ import { Button, Text, Group, PasswordInput, TextInput } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import classes from '../login/css/login.module.css';
 import Link from "next/link"
-import { useQuery } from '@apollo/client';
+import { useLazyQuery, useQuery } from '@apollo/client';
 import { LOGIN_QUERY } from '../login/query';
 
 function LoginForm(){
-    const {data, loading, error} = useQuery(LOGIN_QUERY);
+    
     const form = useForm({
         mode: 'uncontrolled',
         initialValues: {
@@ -20,10 +20,29 @@ function LoginForm(){
           password: (value) => ((value.length <= 6) ? "Short password" : null),
         },
       });
+
+      const [login, {data, loading, error}] = useLazyQuery(LOGIN_QUERY);
     return(
         <>
             <form 
-                onSubmit={form.onSubmit((values) => console.log(values))}
+                onSubmit={form.onSubmit((values) => {
+                    login({
+                        variables: {
+                            _eq: values.email,
+                            _eq1: values.password
+                        },
+                        onCompleted: (data) => {
+                            if (data.users.length > 0) {
+                                console.log("Login successful", data);
+                                alert("Login successful! Welcome back.");
+                                form.reset();
+                            } else {
+                                console.error("Invalid credentials");
+                                alert("Invalid credentials. Please try again.");
+                            }
+                        }
+                    })
+                })}
                 className={classes.form}
             >
                 <TextInput
