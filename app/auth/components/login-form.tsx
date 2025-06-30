@@ -3,8 +3,11 @@ import { Button, Text, Group, PasswordInput, TextInput } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import classes from '../login/css/login.module.css';
 import Link from "next/link"
+import { useQuery } from '@apollo/client';
+import { LOGIN_QUERY } from '../login/query';
 
 function LoginForm(){
+    const {data, loading, error} = useQuery(LOGIN_QUERY);
     const form = useForm({
         mode: 'uncontrolled',
         initialValues: {
