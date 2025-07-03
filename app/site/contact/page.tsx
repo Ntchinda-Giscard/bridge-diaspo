@@ -153,15 +153,14 @@ function Contact() {
 
             </div>
         </div>
-        <iframe
-            src="https://maps.app.goo.gl/cEXL4Q1pjbyvbv1NA"
-            width="100%"
-            height="450"
-            style={{ border: 0 }}
-            allowFullScreen={true}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade">
-        </iframe>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.8498476948694!2d9.6962285!3d4.0510336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1061130022963bd9%3A0xb0e0033f21291824!2sTHE%20bridge%20sarl!5e0!3m2!1sfr!2scm!4v1751537791623!5m2!1sfr!2scm" 
+        // width="600" 
+        // height="450" 
+        style={{ border: 20, borderRadius: 8, width: "100%", height: "400px", marginTop: 20 }} 
+        allowFullScreen 
+        loading="lazy"
+         referrerPolicy="no-referrer-when-downgrade"></iframe>
 
     </> );
 }
