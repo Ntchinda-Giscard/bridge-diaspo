@@ -141,7 +141,7 @@ function Contact() {
 
                     <Group> 
                         <IconMail style={{width: rem(16), height: rem(16)}} stroke={1}  />
-                        <p style={{fontWeight: 500,fontSize: 'small', }}>Dinistamwa7@gmail.com</p>
+                        <p style={{fontWeight: 500,fontSize: 'small', }}>Thebridgesrlc@gmail.com</p>
                     </Group>
 
                     <Group> 
